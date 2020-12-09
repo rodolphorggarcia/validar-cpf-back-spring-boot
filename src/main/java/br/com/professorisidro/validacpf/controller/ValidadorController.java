@@ -11,6 +11,12 @@ import br.com.professorisidro.validacpf.service.Validador;
 @CrossOrigin("*")
 public class ValidadorController {
 	
+	
+	@GetMapping("/")
+	public String home() {
+		return "Seja bem vindo a minha API";
+	}
+	
 	@GetMapping("/validacpf")
 	public String validaCPF(@RequestParam String cpf) {
 		if (Validador.isCPF(cpf)) {
