@@ -14,7 +14,7 @@ public class ValidadorController {
 	
 	@GetMapping("/")
 	public String home() {
-		return "Seja bem vindo a minha API";
+		return "Me paga uma pipoca que eu te ajudo!!";
 	}
 	
 	@GetMapping("/validacpf")
